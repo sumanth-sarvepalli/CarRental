@@ -1,4 +1,4 @@
 # CarRental
 
-echo "This project is about Car Rental booking\n"
+This project is about Car Rental booking\
 Language Used: CPP

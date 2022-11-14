@@ -18,8 +18,6 @@ using namespace std;
 
 #define BUFF 100
 
-
-
 class Customer
 {
 	private:
@@ -27,85 +25,50 @@ class Customer
 		int Age;
 
 	public:
+		Customer(): FirstName(""), LastName(""), Age(0) {};
 		Customer(std::string p_first, std::string p_last, int p_age);
-		~Customer(){
-		};
+		~Customer(){};
+
+		// Function Declarations
 		void setName(std::string p_first, std::string p_last);
 		void setAge(int p_age);
 		std::string getName();
 };
 
-Customer::Customer(std::string p_first, std::string p_last, int p_age)
-{
-	setName(p_first, p_last);
-	setAge(p_age);
-}
-
-void Customer::setName(std::string p_first, std::string p_last)
-{
-	FirstName = p_first;
-	LastName = p_last;
-}
-
-void Customer::setAge(int p_age)
-{
-	if ((p_age >= 18) && (p_age <= 65)) {
-      Age = p_age;
-    }
-    else {
-      std::cout << "Drivers age is not in permissible limit" << std::endl;
-      return;
-    }
-	
-}
-
-std::string Customer::getName()
-{
-	return (FirstName + " " + LastName);
-}
-
-
-class CarRental
-{
-	public:
-		int i, id;
-		double tp, bill, tot;
-		
-		CarRental(){
-			id  = 0;
-		};
-		~CarRental(){
-		};
-		
-		// Function Declarations
-		void GetCustomerDetails(Customer &p_Customer);
-		void GetCarList();
-		void GetTimePeriod();
-		void GenerateInvoice();
-		void generate_list();
-		void display();
-		void welcome();
-		
-};
-CarRental g_CarRentalObj;
-/*
-class cars
+class Cars
 {
 private:
 	string company, model, type;
 	int num, engine;
 	float fuel;
 public:
-	cars()
-	{
-
-	}
-
-	~cars();
+	Cars(): company(""), model(""), type(""), num(0), engine(0), fuel(0) {};
+	~Cars();
 };
 
-cars car;
+class CarRental
+{
+	public:
+		int i, id;
+		double tp, bill, tot;
+		Cars car;
 
+		CarRental(): id(0){};
+		~CarRental(){};
+		
+		// Function Declarations
+		void GetCustomerDetails(Customer &p_Customer);
+		void GetCarList();
+		void GetTimePeriod();
+		void GenerateInvoice();
+		void GenerateList();
+		void Display();
+		void Welcome();		
+};
+CarRental g_CarRentalObj;
+
+
+/*
 template <typename L>
 
 L GenList(L x)

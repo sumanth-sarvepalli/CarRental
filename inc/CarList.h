@@ -2,8 +2,11 @@
 #define _CARLIST_H_
 
 class CarData{
-    
+    public:
+        CarData(){};
+        ~CarData(){};
 
+        void readCarList();
 };
 
-#endif // _CARlIST_H_
+#endif // _CARLIST_H_

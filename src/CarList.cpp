@@ -1,13 +1,12 @@
-//#include "carrental.h"
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
+#include "../inc/CarList.h"
+
 using namespace std;
 
-
-
-void readCarList()
+void CarData::readCarList()
 {
     char *buff = new char;
     string Cars;
@@ -197,10 +196,11 @@ cars:
 std::cout << endl << endl;
 }
 
-
+/*
 int main()
 {
-readCarList();
+	CarData cd;
+	cd.readCarList();
     return 0;
 }
-
+*/

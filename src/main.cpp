@@ -12,7 +12,9 @@
 
 int main()
 {
-	Customer l_customer(" ", " ", 0);
+	
+	Customer l_customer;
+
 	while(1)
 	{
 		std::string ch;
@@ -86,7 +88,7 @@ void CarRental::GetCustomerDetails(Customer &p_customer)
 	std::cout << "please enter your second name: ";
 	std::cin >> l;
 	p_customer.setName(f,l);
-	std::cout << endl << endl;
+	std::cout << std::endl << std::endl;
 
 	std::cout << "customer details are: "<< p_customer.getName() << std::endl;
 }

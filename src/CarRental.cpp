@@ -1,5 +1,6 @@
 #include "../inc/CarRental.h"
 #include "../inc/CarList.h"
+#include <vector>
 #include <map>
 using namespace std;
 
@@ -49,15 +50,16 @@ void CarRental::SetCustomerDetails(Customer &p_Customer)
     std::cout << "Enter age: ";
     std::cin >> l_age;
 
-    Customer l_Customer(l_first,l_last,l_age);
+    Customer l_Customer(l_first, l_last, l_age);
     p_Customer = l_Customer;
+
+    customers.push_back(l_Customer);
 }
 
 void CarRental::GetCustomerDetails(Customer &p_Customer)
 {
     cout << "Customer Details are:\n Name: " << p_Customer.getName() << "Age: " << p_Customer.getAge() 
         << "Car Hired: " << endl ; //getCarDetails();
-
 }
 void CarRental::GetCarList()
 {

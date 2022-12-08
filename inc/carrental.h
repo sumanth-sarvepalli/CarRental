@@ -2,6 +2,7 @@
 #define _CARRENTAL_H_
 
 #include <iostream>
+#include <vector>
 
 #ifdef _WIN32
 #include <conio.h>
@@ -35,6 +36,8 @@ class CarRental
 public:
 	int i, id;
 	double tp, bill, tot;
+	 // store all customers into a vector or list
+    std::vector<Customer> customers; 
 
 	CarRental() : id(0){};
 	~CarRental(){};

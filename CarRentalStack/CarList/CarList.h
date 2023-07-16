@@ -14,8 +14,8 @@ private:
 
 public:
     
-    CarData(){};
-    ~CarData(){};
+    CarData(){}
+    ~CarData(){}
 
     void readCarList();
 
@@ -27,10 +27,30 @@ public:
         float FuelCapacity;
 
     public:
-        Cars() : Company(""), Model(""), FuelType(""), RegNum(0), EngineNum(0), FuelCapacity(0){};
+        Cars() : Company(""), Model(""), FuelType(""), RegNum(0), EngineNum(0), FuelCapacity(0){}
         ~Cars();
         void setCarData();
     };
 };
+
+
+/*
+template <typename L>
+
+L GenList(L x)
+{
+    return x;
+}
+
+class Node {
+
+
+};
+
+string names[100];
+string models[100];
+int tps[100];
+
+*/
 
 #endif // _CARLIST_H_

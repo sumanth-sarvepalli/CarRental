@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
-#include "../inc/CarList.h"
+#include "CarList.h"
 
 using namespace std;
 

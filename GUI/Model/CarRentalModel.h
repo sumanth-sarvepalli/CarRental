@@ -3,7 +3,7 @@
 
 #include <QWidget>
 
-class CarRentalModel:public QObject
+class CarRentalModel: public QObject
 {
     Q_OBJECT
 public:

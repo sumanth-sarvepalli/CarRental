@@ -1,7 +1,7 @@
 #ifndef CARRENTALMODEL_H
 #define CARRENTALMODEL_H
 
-#include <QWidget>
+#include <QObject>
 
 class CarRentalModel: public QObject
 {

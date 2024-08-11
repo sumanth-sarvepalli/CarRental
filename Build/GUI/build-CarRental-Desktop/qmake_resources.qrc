@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/CarRental">
+<file alias="main.qml">/home/sumanth/Dev/repo/CarRental/main.qml</file>
+<file alias="GUI/View/CarRental.qml">/home/sumanth/Dev/repo/CarRental/GUI/View/CarRental.qml</file>
+<file alias="GUI/View/CarList.qml">/home/sumanth/Dev/repo/CarRental/GUI/View/CarList.qml</file>
+</qresource>
+</RCC>
